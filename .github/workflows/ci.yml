@@ -25,7 +25,7 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: deno test --allow-all --junit-path=./test-results/junit.xml src/**/*.test.ts
+      - run: deno test --allow-all --junit-path=./test-results/junit.xml
       - uses: ./
         if: success() || failure()
         with:
