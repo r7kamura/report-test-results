@@ -10,6 +10,7 @@ Use this action after generating test results as follows:
 
 ```yaml
 - uses: r7kamura/report-test-results@v0
+  if: success() || failure()
   with:
     path: test-results/*.xml
 ```

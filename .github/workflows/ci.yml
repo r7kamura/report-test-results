@@ -27,5 +27,6 @@ jobs:
           deno-version: v1.x
       - run: deno test --allow-all --junit-path=./test-results/junit.xml src/**/*.test.ts
       - uses: ./
+        if: success() || failure()
         with:
           path: test-results/junit.xml
