@@ -11,9 +11,6 @@ on:
           - minor
           - patch
         default: patch
-      version:
-        description: Version to change to.
-        type: string
 
 jobs:
   run:
@@ -23,4 +20,3 @@ jobs:
       - uses: r7kamura/bump-request@v0
         with:
           release_type: ${{ inputs.release_type }}
-          version: ${{ inputs.version }}
