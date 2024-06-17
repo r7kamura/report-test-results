@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: deno fmt --check src/**/*.ts
+      - run: deno lint src/**/*.ts
+      - run: deno test --allow-all --junit-path=./test-results/junit.xml src/**/*.test.ts
+      - uses: ./
+        with:
+          path: ./test-results/junit.xml
