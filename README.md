@@ -11,7 +11,7 @@ Use this action after generating test results as follows:
 ```yaml
 - uses: r7kamura/report-test-results@v0
   with:
-    path: ./test-results/*.xml
+    path: test-results/*.xml
 ```
 
 This way, the test results will be displayed in the Pull Request Checks UI:
