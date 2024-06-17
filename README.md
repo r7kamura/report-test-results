@@ -25,4 +25,4 @@ This way, the test results will be displayed in the Pull Request Checks UI:
 Glob pattern to search for the test results.
 
 - required
-- e.g. `test-results/**/*.xml`
+- e.g. `test-results/*.xml`
