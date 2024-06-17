@@ -1,7 +1,7 @@
 import { github } from "./deps.ts";
 import { getCurrentJob, updateCheckRun } from "./github.ts";
 import { glob } from "./file.ts";
-import { inspectTestReport } from "./report.ts";
+import { collectTestReport } from "./junit.ts";
 
 const githubToken = Deno.env.get("GITHUB_TOKEN")!;
 const globPattern = Deno.env.get("REPORT_TEST_RESULTS_INPUTS_PATH");
@@ -10,7 +10,7 @@ if (!globPattern) {
   throw new Error("Specify `path`.");
 }
 
-const report = await inspectTestReport(
+const report = await collectTestReport(
   glob(globPattern),
 );
 

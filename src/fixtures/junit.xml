@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="deno test" tests="1" failures="0" errors="0" time="0.003">
+    <testsuite name="./src/file.test.ts" tests="1" disabled="0" errors="0" failures="0">
+        <testcase name="glob" classname="./src/file.test.ts" time="0.001" line="4" col="6">
+        </testcase>
+    </testsuite>
+</testsuites>
