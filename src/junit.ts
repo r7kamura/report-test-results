@@ -1,6 +1,6 @@
 import { junit2json } from "./deps.ts";
 
-export async function inspectTestReport(paths: string[]) {
+export async function collectTestReport(paths: string[]) {
   const reports = await Promise.all(
     paths.map(async (path) => {
       return await parseTestReport(path);
