@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="deno test" tests="2" failures="1" errors="0" time="0.071">
+    <testsuite name="./src/file.test.ts" tests="1" disabled="0" errors="0" failures="1">
+        <testcase name="glob" classname="./src/file.test.ts" time="0.003" line="4" col="6">
+            <failure message="Uncaught AssertionError: Values are not equal:
+
+
+    [90m[1m[Diff][22m[39m [31m[1mActual[22m[39m / [32m[1mExpected[22m[39m
+
+
+[37m    [[39m
+[31m[1m-     &quot;src/file.ts&quot;,[22m[39m
+[32m[1m+     &quot;src/file.t&quot;,[22m[39m
+[37m    ][39m
+">AssertionError: Values are not equal:
+
+
+    [90m[1m[Diff][22m[39m [31m[1mActual[22m[39m / [32m[1mExpected[22m[39m
+
+
+[37m    [[39m
+[31m[1m-     &quot;src/file.ts&quot;,[22m[39m
+[32m[1m+     &quot;src/file.t&quot;,[22m[39m
+[37m    ][39m
+
+  throw new AssertionError(message);
+[0m[31m        ^[0m
+    at [0m[1m[3mModule.assertEquals[0m ([0m[36mhttps://deno.land/std@0.65.0/testing/asserts.ts[0m:[0m[33m193[0m:[0m[33m9[0m)
+    at [0m[36mfile:///home/r7kamura/ghq/github.com/r7kamura/report-test-results/src/file.test.ts[0m:[0m[33m6[0m:[0m[33m11[0m</failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="./src/junit.test.ts" tests="1" disabled="0" errors="0" failures="0">
+        <testcase name="collectTestReport" classname="./src/junit.test.ts" time="0.001" line="4" col="6">
+        </testcase>
+    </testsuite>
+</testsuites>

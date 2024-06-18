@@ -2,11 +2,9 @@
 
 Custom action to report test results.
 
-This action reads the test results written in JUnit XML format and reflects them in GitHub Checks. This makes it easy to view test results from pull request pages, etc.
-
 ## Usage
 
-Use this action after generating test results as follows:
+This action reads the test results written in JUnit XML format and reflects them in GitHub Checks. So use this action after generating test results:
 
 ```yaml
 - uses: r7kamura/report-test-results@v0
@@ -15,7 +13,7 @@ Use this action after generating test results as follows:
     path: test-results/*.xml
 ```
 
-This way, the test results will be displayed in the Pull Request Checks UI:
+This way, the test results will be displayed in the pull request checks UI:
 
 ![](./images/screenshot.png)
 
